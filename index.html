@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>GitHub Finder</h1>
+            <p>Find GitHub users and explore their profile</p>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for a GitHub user...">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div id="userCard" class="user-card hidden">
+            <div class="avatar">
+                <img id="avatar" src="" alt="Avatar">
+            </div>
+            <div class="user-info">
+                <h2 id="username"></h2>
+                <p id="bio"></p>
+                <a id="profileLink" href="" target="_blank">View Profile</a>
+                <div class="details">
+                    <div><strong>Repos:</strong> <span id="repos"></span></div>
+                    <div><strong>Followers:</strong> <span id="followers"></span></div>
+                    <div><strong>Following:</strong> <span id="following"></span></div>
+                </div>
+            </div>
+        </div>
+        <div id="errorMessage" class="error-message hidden">
+            <p>No user found. Please try again.</p>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
